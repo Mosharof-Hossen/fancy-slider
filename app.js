@@ -131,6 +131,12 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+document.getElementById("duration").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    sliderBtn.click();
+  }
+});
+
 const toggleSpinner = () =>{
   const spinner = document.getElementById("loading-spinner")
   spinner.classList.toggle("d-none")
